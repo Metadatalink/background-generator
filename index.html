@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient Background</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+</head>
+<body id="gradient">
+    <h1>BACKGROUND <br> GENERATOR</h1>
+    <form>
+        <!--  Colour inputs    -->
+        <input type="color" name="color" id="color1" value="#00ff00">
+        <input type="color" name="color" id="color2" value="#00ffff">
+        <br><br>
+        
+        <!--   Radio Inputs - linear or radial gradient?   -->
+        <input type="radio" id="linear" name="type" value="linear" checked>
+        <label for="linear">Linear</label>
+        <input type="radio" id="radial" name="type" value="radial">
+        <label for="radial">Radial</label>
+        <br><br>
+        
+        <div id="linearDiv">
+            <!--   Dropdown (Select) Input for direction of lineal gradients   -->
+            <label for="direction">Choose a Direction:</label>
+            <select name="direction" id="direction">
+                <option value="bottom" selected>Vertical</option>
+                <option value="right">Horizontal</option>
+                <option value="top right">Diagonal - top right</option>
+                <option value="bottom right">Diagonal - bottom right</option>
+            </select>
+            <br><br>
+        </div>
+        
+        <div id="radialDiv">
+            <!--   Dropdown (Select) Input for the size keywords of radial gradients   -->
+            <label for="size">Choose a Size Keyword:</label>
+            <select name="size" id="size">
+                <option value="closest-side" selected>Closest-side</option>
+                <option value="farthest-side">Farthest-side</option>
+                <option value="closest-corner">Closest-corner</option>
+                <option value="farthest-corner">Farthest-corner</option>
+            </select>
+            <br><br>
+
+            <!--   Range inputs for positioning the radial gradient shape  -->
+            <label for="x">Horizontal positioning (0% - 100%):</label>
+            <input type="range" id="x" name="position" min="0" max="100"><br><br>
+            <label for="y">Vertical positioning (0% - 100%):</label>
+            <input type="range" id="y" name="position" min="0" max="100">
+            <br><br>
+        </div>
+        
+        <!--   Random colour selection button   -->
+        <button id="random">Random Colour Selection</button>
+        <br><br>
+        <h2>Current CSS Background</h2>
+        <h3></h3>
+    </form>
+    <script src="./script.js"></script>
+</body>
+</html>

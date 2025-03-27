@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto+Slab:wght@500&display=swap');
+
+/* 
+font-family: 'Montserrat', sans-serif;
+font-family: 'Roboto Slab', serif; 
+*/
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: linear-gradient(to bottom, #00FF00, #00FFFF);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
+    padding: 1%;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    letter-spacing: 1.25rem;
+}
+
+h2, h3, label, select {
+    font-family: 'Roboto Slab', serif;
+    letter-spacing: 0.15em;
+}
+
+button {
+    font-family: 'Montserrat', sans-serif;
+    width: 20%;
+    padding: 1%;
+    border-radius: 5px;
+    letter-spacing: 0.15em;
+    font-weight: bolder;
+    margin-top: 5%;
+}
+
+input[type="color"] {
+    width: 20vw;
+    height: 10vh;
+    padding: 0;
+    border-radius: 5px;
+}
+
+input[type="radio"] {
+    width: 1rem;
+    vertical-align: text-top;
+}
+
+input[type="range"] {
+    vertical-align: text-bottom;
+}
+
+div#radialDiv {
+    display: none;
+}
+
+@media screen and (max-width: 600px) {
+    h1 {font-size: 1rem;}
+    label {font-size: 0.75rem;}
+    input {width: 30%;}
+    button {width: 40%;}
+}

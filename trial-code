@@ -1,0 +1,19 @@
+let direction = document.getElementbyId("direction");
+let size = document.getElementbyId("size");
+
+let gradType = "linear"
+
+switch (input.type.value) {
+	case "linear": {
+		let gradType = "linear";
+		let details = "to ${direction}";
+		
+	}
+	case "radial": {
+		let gradType = "radial";
+		let details = "${size} at ${x} ${y}";
+
+	}
+	default: {
+	}
+}
